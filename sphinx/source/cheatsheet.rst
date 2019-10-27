@@ -1,5 +1,7 @@
 .. _cheat-sheet:
 
+(Originally from https://matplotlib.org/sampledoc/cheatsheet.html)
+
 ******************
 Sphinx cheat sheet
 ******************
