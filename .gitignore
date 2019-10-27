@@ -3,3 +3,4 @@ sphinx/build/*
 *.pdf
 build/*
 *#
+!slides/img/*.pdf
