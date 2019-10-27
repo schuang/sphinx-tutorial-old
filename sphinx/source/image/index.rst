@@ -5,14 +5,18 @@ Notice that the file paths to the images are relative to the directory
 of this file.
 
 
-Here is an image:
+Embedded Image
+-------------------
 
-.. image:: UCLA_logo.png
+.. image:: img/UCLA_logo.png
    :scale: 10%
 
-Here is a figure:
 
-.. figure:: UCLA_logo.png
+Figure
+-------------
+
+
+.. figure:: img/UCLA_logo.png
    :scale: 10%
    :align: center
 

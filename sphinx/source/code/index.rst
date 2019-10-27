@@ -1,6 +1,10 @@
 
 Code listing
-----------------------
+======================
+
+
+Syntax highlighting
+----------------------------
 
 Some of the useful code-listing features are:
 
@@ -11,7 +15,32 @@ Some of the useful code-listing features are:
 
 Highlighting of programming languages are supported by `Pygments <http://pygments.org/docs/>`_.
 
-Bash example:
+Pygments has a collection of syntax highlighting styles:
+
+.. code-block:: python
+
+    from pygments.styles import get_all_styles
+    print(list(get_all_styles()))
+
+['default', 'emacs', 'friendly', 'colorful', 'autumn', 'murphy', 'manni', 'monokai', 'perldoc', 'pastie', 'borland', 'trac', 'native', 'fruity', 'bw', 'vim', 'vs', 'tango', 'rrt', 'xcode', 'igor', 'paraiso-light', 'paraiso-dark', 'lovelace', 'algol', 'algol_nu', 'arduino', 'rainbow_dash', 'abap']
+
+
+For example, in ```conf.py```:
+
+.. code-block:: python
+
+    pygments_style = 'emacs'
+
+
+Examples
+----------------------------------------
+
+Inlined listing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The code listing is embedded in the text:
+
+Bash:
 
 .. code-block:: bash
 
@@ -21,11 +50,12 @@ Bash example:
        echo $LD_LIBRARY_PATH
     done
 
-C example with line emphasis:
+
+C language (also with line emphasis):
 
 .. code-block:: c
    :linenos:
-   :emphasize-lines: 3,5
+   :emphasize-lines: 1,3
 
     #include <stdio.h>
 
@@ -40,7 +70,11 @@ C example with line emphasis:
     } 
 
 
-It is possible to include an external file, e.g. including a Python file:
+Including external file(s)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The code is in an external file, e.g. ```foo.py```:
+
 
 .. literalinclude:: code1.py
    :language: python
