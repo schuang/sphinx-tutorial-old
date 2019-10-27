@@ -1,8 +1,6 @@
 Sphinx tutorial
 ===========================================
 
-This is a test.
-
 
 .. :numbered:
 
@@ -11,12 +9,14 @@ This is a test.
    :maxdepth: 2
    :glob:
    
-   code/*
-   math/*
-   image/*
+   code/index.rst
+   math/index.rst
+   image/index.rst
+   link/index.rst
    
    
 .. toctree::
    :hidden:
     
-   cheatsheet.rst
+   cheatsheet/cheatsheet.rst
+

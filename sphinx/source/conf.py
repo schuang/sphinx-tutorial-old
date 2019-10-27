@@ -135,7 +135,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
         (master_doc, 'Sphinxtutorial.tex', 'Sphinx Tutorial',
-     'Shao-Ching Huang', 'article'),
+         'Shao-Ching Huang', 'report'),
 ]
 
 

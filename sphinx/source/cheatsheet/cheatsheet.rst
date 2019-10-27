@@ -1,10 +1,11 @@
 .. _cheat-sheet:
 
-(Originally from https://matplotlib.org/sampledoc/cheatsheet.html)
 
 ******************
 Sphinx cheat sheet
 ******************
+
+(Originally from https://matplotlib.org/sampledoc/cheatsheet.html)
 
 Here is a quick and dirty cheat sheet for some common stuff you want
 to do in sphinx and ReST.  You can see the literal source for this
