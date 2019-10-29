@@ -11,6 +11,7 @@ addons:
     - latexmk
     - texlive-latex-recommended
     - texlive-latex-extra
+    - texlive-full
 install:
 - pip install -U pip
 - pip install -r requirements.txt
