@@ -7,7 +7,7 @@ python:
 addons:
   apt_packages:
     - pandoc
-    - texlive-latex
+    - texlive-latex-base
 install:
 - pip install -U pip
 - pip install -r requirements.txt
