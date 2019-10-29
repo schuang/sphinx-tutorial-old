@@ -7,6 +7,7 @@ python:
 addons:
   apt_packages:
     - pandoc
+    - texlive-latex
 install:
 - pip install -U pip
 - pip install -r requirements.txt
@@ -14,6 +15,8 @@ before_script:
 - cd sphinx
 script:
 - make html
+- make latexpdf
+- cp build/latex/Sphinxtutorial.pdf build/html
 after_success:
   #test the docs
 deploy:
