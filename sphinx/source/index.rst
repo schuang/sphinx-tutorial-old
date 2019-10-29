@@ -13,8 +13,8 @@ Sphinx tutorial
    math/index.rst
    image/index.rst
    link/index.rst
-   
    markdown/index.rst
+   ipynb/index.rst
    
 .. toctree::
    :hidden:
