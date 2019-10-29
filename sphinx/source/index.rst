@@ -14,6 +14,7 @@ Sphinx tutorial
    image/index.rst
    link/index.rst
    
+   markdown/index.rst
    
 .. toctree::
    :hidden:
