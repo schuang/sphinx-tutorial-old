@@ -10,6 +10,7 @@ addons:
     - texlive-latex-base
     - latexmk
     - texlive-latex-recommended
+    - texlive-latex-extra
 install:
 - pip install -U pip
 - pip install -r requirements.txt
