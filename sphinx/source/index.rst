@@ -1,6 +1,7 @@
 Sphinx tutorial
 ===========================================
 
+This tutorial demonstrates a number of Sphinx features useful for technical documentation.
 
 .. :numbered:
 
