@@ -9,6 +9,7 @@ addons:
     - pandoc
     - texlive-latex-base
     - latexmk
+    - texlive-fonts-recommended
 install:
 - pip install -U pip
 - pip install -r requirements.txt
