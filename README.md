@@ -18,7 +18,7 @@ etc.) can be transparently customized.
 
 - [Sphinx documentation](http://www.sphinx-doc.org/en/master/)
    - [Examples](http://www.sphinx-doc.org/en/master/examples.html)
-- [Sphinx cheat sheet](https://matplotlib.org/sampledoc/cheatsheet.html)
+- [Sphinx cheat sheet (from matplotlib)](https://matplotlib.org/sampledoc/cheatsheet.html) 
 - [Read the docs](https://readthedocs.org/)
 - [Pygments: syntax highlighting](http://pygments.org/docs/)
 - [LaTeX](https://www.latex-project.org/)
