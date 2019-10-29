@@ -20,7 +20,7 @@ before_script:
 script:
 - make html
 - make latexpdf
-- cp build/latex/Sphinxtutorial.pdf build/html
+- cp build/latex/report.pdf build/html
 after_success:
   #test the docs
 deploy:

@@ -22,3 +22,5 @@ This tutorial demonstrates a number of Sphinx features useful for technical docu
     
    cheatsheet/cheatsheet.rst
 
+
+The PDF version of this site is also avaiable in a `report <report.pdf>`_ format.
