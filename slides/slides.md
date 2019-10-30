@@ -59,7 +59,7 @@ date: 2019-10-27
 
 - Generate static HTML pages 
   - No security concerns
-  - No need to additional maintain WordPress and plugins
+  - No need to maintain WordPress that often "automatically" breaks
   - Can use free hosting services (github, gitlab, read the docs, etc.) if desired
 
 
@@ -75,19 +75,25 @@ date: 2019-10-27
 
 # Continuous integration/deployment (CI/CD)
 
+- A software engineering technique to integrate early and often to avoid "integration hell"
+- Best practices:
+    - Automate the build
+    - Commit changes to repository regularly
+    - Every commit is built and tested
 
 
 # Travis CI
 
-(what is Travis CI)
+- Travis CI is a hosted contiguous integration service
+- Integration with GitHub
+- Paid plans for private repositories, free for open-source projects
+- Web site: https://travis-ci.com/
 
+There are also [several other popular CI systems](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software) with a variety of build systems (C, C++, Python, PHP, etc.)
 
-There are also several other popular CI systems...
 
 
 # Enabling Travis CI on a Github repository
-
-
 
 - Create an access token in github.com
     
@@ -214,11 +220,14 @@ source_suffix = { '.rst': 'restructuredtext',
 
 # Travis CI demo
 
-What to look?
+What to look:
 
 - See the github repository and travis-ci.com
+
 - Commit to github triggering Travis CI build job
+
 - Watch the "job log" in real time
+
 - Build status badge
 
 
@@ -231,8 +240,9 @@ What to look?
     - Static web pages are light-weight, robust, and have no security issues
     
 - Single source, multiple output formats
+    - Separation of contents and detailed formatting
     - text files in ReST or markdown formats
-    - Start-of-the-art version control (git) workflow
+    - Standard git-based workflow (pull/merge request etc.)
     - Customizable outputs in HTML, pdf, epub, etc.
     
 - Continuous integration/deployment (CI/CD) and hosting services automate and simplify workflow
