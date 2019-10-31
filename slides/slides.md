@@ -2,29 +2,29 @@
 title: Using Sphinx
 subtitle:  Technical Documentation with Continuous Integration and Deployment
 author: Shao-Ching Huang
-date: 2019-10-27
+date: 2019-10-31
 ---
 
 
-# Technical documentation workflow
+# Technical documentation system: considerations
 
 - Not the same as writing a blog article
 
-- Write: to focus only on contents
+- Writing
 
-    - Principle of separation: contents vs. layout/formatting
+    - Focus on contents and structures, strict and fixed formatting
 
-- Review: easy to see changes, revert, comment, collaborate etc.
+    - Principle of separation: contents vs. layout
 
-    - git version control's pull request/merge request
+- Review
 
-- Publish: automation!
+    - easy to see changes, revert, comment, collaborate etc
 
 - Other considerations
 
     - Subject experts are not necessarily web developers
 
-    - Multiple formats of the same contents may be needed (e.g. web pages and pdf)
+    - Multiple formats generated from the same source (e.g. web pages and pdf report/manual)
 
 
 
@@ -32,7 +32,6 @@ date: 2019-10-27
 
 
 # What is Sphinx
-
 
 
 - Sphinx converts reStructuredText files into HTML websites and PDF, EPub, Texinfo and man.
@@ -43,9 +42,6 @@ date: 2019-10-27
 ![](img/sphinx-website.png)
 
 
-# Using Sphinx with CI: the big picture
-
-![](img/big-picture.pdf)
 
 
 # Advantages of using Sphinx
@@ -73,20 +69,36 @@ date: 2019-10-27
 
     - [`https://schuang.github.io/sphinx-tutorial`](https://schuang.github.io/sphinx-tutorial)
 
+
+
+
+# Using Sphinx with CI: the big picture
+
+![](img/big-picture.pdf)
+
+
+
 # Continuous integration/deployment (CI/CD)
 
 - A software engineering technique to integrate early and often to avoid "integration hell"
+
 - Best practices:
+
     - Automate the build
+    
     - Commit changes to repository regularly
+    
     - Every commit is built and tested
 
 
 # Travis CI
 
 - Travis CI is a hosted contiguous integration service
+
 - Integration with GitHub
-- Paid plans for private repositories, free for open-source projects
+
+- Free for open-source projects, paid plans for private repositories
+
 - Web site: https://travis-ci.com/
 
 There are also [several other popular CI systems](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software) with a variety of build systems (C, C++, Python, PHP, etc.)
@@ -97,12 +109,13 @@ There are also [several other popular CI systems](https://en.wikipedia.org/wiki/
 
 - Create an access token in github.com
     
-- Past the access token into Travis CI
+- Past the access token into Travis CI to enable access to Github
+
     - e.g. `$GITHUB_TOKEN`
+
     - Use it in `.travis.yml`
 
-
-Other CI/CDs have a similar procedure, e.g. `gitlab.com`
+- Other CI/CDs have a similar procedure, e.g. `gitlab.com`
 
 
 
@@ -119,7 +132,7 @@ Other CI/CDs have a similar procedure, e.g. `gitlab.com`
 
 
 
-#  {.allowframebreaks}
+# YAML to control the CI process {.allowframebreaks}
 
 ```bash
 $ cat .travis.yml
@@ -164,6 +177,39 @@ recommonmark
 ![](img/travis-ci-jobs.png)
 
 
+
+# Useful Sphinx settings in `conf.py`
+
+To support Github pages:
+
+```python
+extensions = [ 'sphinx.ext.mathjax',
+               'sphinx.ext.githubpages' ]
+```
+
+To also support markdown source files:
+
+```python
+source_suffix = { '.rst': 'restructuredtext', 
+                  '.md' : 'markdown' }
+```
+
+
+
+# Travis CI demo
+
+What to look:
+
+- See the github repository and travis-ci.com
+
+- Commit to github triggering Travis CI build job
+
+- Watch the "job log" in real time
+
+- Build status badge
+
+
+
 # gitlab pages pipeline
 
 - similar to Travis CI
@@ -200,51 +246,41 @@ pages:
 ![](img/gitlab-pipeline-jobs.png)
 
 
-# Additional Sphinx settings in `conf.py`
 
-To support Github pages:
-
-```python
-extensions = [ 'sphinx.ext.mathjax',
-               'sphinx.ext.githubpages' ]
-```
-
-To also support markdown source files:
-
-```python
-source_suffix = { '.rst': 'restructuredtext', 
-                  '.md' : 'markdown' }
-```
-
-
-
-# Travis CI demo
-
-What to look:
-
-- See the github repository and travis-ci.com
-
-- Commit to github triggering Travis CI build job
-
-- Watch the "job log" in real time
-
-- Build status badge
-
-
-# Summary
+# Summary   {.allowframebreaks}
 
 - Sphinx is a mature and powerful documentation generator
+
     - Designed for technical documentation
+
     - Used by many high-profile projects
+    
     - Can easily include images, math, and code listing in style
+    
     - Static web pages are light-weight, robust, and have no security issues
     
+
 - Single source, multiple output formats
+
     - Separation of contents and detailed formatting
-    - text files in ReST or markdown formats
-    - Standard git-based workflow (pull/merge request etc.)
-    - Customizable outputs in HTML, pdf, epub, etc.
     
-- Continuous integration/deployment (CI/CD) and hosting services automate and simplify workflow
+    - text files in ReST or markdown formats
+    
+    - Standard git-based workflow (pull/merge request etc.)
+    
+    - Customizable outputs in HTML, pdf, epub, etc.
+
+    
+- Contiguous Integration (CI) automate rebuild when there is a change
+
+    - Travis CI builds from Github sources, place HTML on Github pages
+    
+    - Total control of the documentation production process, including themes
+    
+    - CI can be applied to other actions (by essentially arbrary scripts)
+    
+- Can use hosting service like "read the docs", but may not have full format control
+
+
 
 
