@@ -1,7 +1,7 @@
 ---
 classoption:
    - t
-fontsize: 12pt
+fontsize: 11pt
 indent: true
 header-includes: |
   \usefonttheme[onlymath]{serif}
