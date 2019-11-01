@@ -1,5 +1,5 @@
 ---
-title: Using Sphinx
+title: A Breif Introduction to Sphinx
 subtitle:  Technical Documentation with Continuous Integration and Deployment
 author: Shao-Ching Huang
 date: 2019-10-31
@@ -46,7 +46,8 @@ date: 2019-10-31
 
 # Advantages of using Sphinx
 
-- Based on text files
+- Based on text files (close to plain text)
+
   - Use one's favoriate editor/local environment for writing
   - Easy to track changes using version control
   - Standard git pull (or merge) request review process
@@ -54,6 +55,7 @@ date: 2019-10-31
   - The entire workflow is open-source based, no vendor lock-in
 
 - Generate static HTML pages 
+
   - No security concerns
   - No need to maintain WordPress that often "automatically" breaks
   - Can use free hosting services (github, gitlab, read the docs, etc.) if desired
