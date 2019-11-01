@@ -251,11 +251,9 @@ pages:
 
 # Summary   {.allowframebreaks}
 
-- Sphinx is a mature and powerful documentation generator
+- Sphinx is powerful documentation generator
 
-    - Designed for technical documentation
-
-    - Used by many high-profile projects
+    - Designed for technical documentation, used by many projects
     
     - Can easily include images, math, and code listing in style
     
@@ -264,14 +262,12 @@ pages:
 
 - Single source, multiple output formats
 
-    - Separation of contents and detailed formatting
+    - Separation of contents and display formatting/layout
     
-    - text files in ReST or markdown formats
+    - Contents written in plain texts, formatting controlled by css/template/etc.
     
-    - Standard git-based workflow (pull/merge request etc.)
+    - Ideal for git-based version control (pull/merge request etc.)
     
-    - Customizable outputs in HTML, pdf, epub, etc.
-
     
 - Contiguous Integration (CI) automate rebuild when there is a change
 
@@ -281,8 +277,18 @@ pages:
     
     - CI can be applied to other actions (by essentially arbrary scripts)
     
-- Can use hosting service like "read the docs", but may not have full format control
+- Freedom of having different hosting options
 
+    - Local web server (i.e. just copy the HTML directory) - total control
+    
+    - Github/Gitlab pages using contiguous integration (CI) - total control
+    
+    - Hosting service like Read the Docs (but have to following their format/style) - partial control
+    
+    
+# Final thoughts
+
+Of course, Sphinx is a tool to build documentation. A tool does not automatically make the contents good.
 
 
 
