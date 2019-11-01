@@ -18,8 +18,8 @@ External Web page
 
 An external web page example:  `google search <https://www.google.com>`_
 
-Or `google search`_
+Or `google_search`_
 
 
-.. _google search: www.google.com
+.. _google_search: www.google.com
 
