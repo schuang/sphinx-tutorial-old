@@ -30,6 +30,4 @@ Online Image
 
 .. raw:: html
 
-    <iframe frameborder="0" scrolling="no" width="600"
-      src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png">
-    </iframe>
+    <img src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png"></img>
