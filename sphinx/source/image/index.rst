@@ -26,12 +26,10 @@ Figure
 Online Image
 -----------------
 
-.. image:: http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png
-   :width: 700
+
 
 .. raw:: html
 
-   <iframe frameborder="0" scrolling="no" width="600px"
-     src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png">
-     <p>iframes are not supported by your browser.</p>
-   </iframe><br />
+    <iframe frameborder="0" scrolling="no" width="600"
+      src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png">
+    </iframe>
