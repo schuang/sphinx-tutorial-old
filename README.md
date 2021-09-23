@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/schuang/sphinx-tutorial.svg?branch=master)](https://travis-ci.com/schuang/sphinx-tutorial)
+[![Build and Deploy docs](https://github.com/schuang/sphinx-tutorial/actions/workflows/deploy.yml/badge.svg)](https://github.com/schuang/sphinx-tutorial/actions/workflows/deploy.yml)
 
 # Sphinx tutorial
 
