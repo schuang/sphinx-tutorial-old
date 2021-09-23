@@ -30,4 +30,4 @@ Online Image
 
 .. raw:: html
 
-    <img src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png"></img>
+    <img src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png" width="500">
