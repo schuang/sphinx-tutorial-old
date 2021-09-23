@@ -23,3 +23,8 @@ Figure
    This is the caption of the figure. The caption can be very long.
 	   
 
+Online Image
+-----------------
+
+.. image:: http://hpc.ucla.edu/hoffman2/h2stat/plotdata/slot-usage.png
+  :width: 700
