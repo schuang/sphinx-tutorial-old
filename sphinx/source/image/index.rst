@@ -27,6 +27,10 @@ Online Image
 -----------------
 
 
+.. raw:: html
+
+    <iframe src="http://hpc.ucla.edu/hoffman2/h2stat/plotdata/plot.html"></iframe>
+
 
 .. raw:: html
 
