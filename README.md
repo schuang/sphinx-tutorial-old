@@ -24,4 +24,3 @@ etc.) can be transparently customized.
 - [LaTeX](https://www.latex-project.org/)
 - [mathjax](https://www.mathjax.org/)
 - [epub](https://en.wikipedia.org/wiki/EPUB)
-
